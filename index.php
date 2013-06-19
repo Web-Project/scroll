@@ -91,7 +91,7 @@ $(document).ready(function() {
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$username = $_POST["username"]; //Storing username in $username variable.
 		$password = $_POST["password"]; //Storing password in $password variable.
-		$match = "Select * from Users where username = '" . $_POST['username'] . "'
+		$match = "Select * from users where username = '" . $_POST['username'] . "'
 		and password = '" . $_POST['password'] . "';";
 		$qry = mysql_query($match);
 		$num_rows = mysql_num_rows($qry);
