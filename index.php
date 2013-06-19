@@ -95,6 +95,8 @@ $(document).ready(function() {
 		and password = '" . $_POST['password'] . "';";
 		$qry = mysql_query($match);
 		$num_rows = mysql_num_rows($qry);
+		
+		echo $match;
 
 		if ($num_rows <= 0) {
 			echo "<script language='javascript'> document.getElementById('message').innerHTML = '<p align=center><font color=red>Account does not exist!</font></p>'; </script>";
